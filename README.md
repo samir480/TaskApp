@@ -40,10 +40,17 @@ To run this project, ensure your server meets the following requirements:
     DB_DATABASE=your_database_name
     DB_USERNAME=your_database_username
     DB_PASSWORD=your_database_password
-6. Run migrations:
+6. Run migrations and seed:
+
+   it will generate test user with following credentials:
+
+   email : test@example.com
+
+   password : Admin123
+   
     ```bash
-    php artisan migrate
-7. Run the development server:
+    php artisan migrate --seed
+8. Run the development server:
    ```bash
    php artisan serve
 
