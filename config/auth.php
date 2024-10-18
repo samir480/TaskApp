@@ -40,6 +40,10 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        'api' => [
+            'driver' => 'sanctum', // Use 'jwt' if you're using JWT, or 'passport' if you're using Laravel Passport
+            'provider' => 'users',
+        ],
     ],
 
     /*
